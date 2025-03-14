@@ -1,15 +1,8 @@
 
-""" Program to read a string and remove the given words from the string"""
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
 
-def remove_words(text, words_to_remove):
-    words = text.split()  
-    filtered_words = [word for word in words if word not in words_to_remove]
-    return " ".join(filtered_words) 
+def nCr(n, r):
+    return factorial(n) // (factorial(r) * factorial(n - r))
 
-text = input("Enter a string: ")
-
-words_to_remove = input("Enter words to remove (separated by spaces): ").split()
-
-new_text = remove_words(text, words_to_remove)
-print("\nString after removing given words:")
-print(new_text)
+print(nCr(5, 2))
