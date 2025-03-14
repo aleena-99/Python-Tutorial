@@ -1,4 +1,4 @@
- def remove_substring(s, sub):
-    return s.replace(sub, "")
+def to_uppercase(s):
+    return s.upper()
 
-print(remove_substring("Hello World World", "World"))
+print(to_uppercase("hello"))
