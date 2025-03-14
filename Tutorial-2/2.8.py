@@ -1,11 +1,8 @@
 
-#Write a Program to replace all occurrence of a substring with a new substring.
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
 
-
-s= input("Enter the string")
-sub= input("Enter the substring ")
-sub2= input("Enter the new substring ")
-
-if sub in s:
-    s = s.replace(sub,sub2)
-    print(s)
+print("Union:", A | B)
+print("Intersection:", A & B)
+print("Difference:", A - B)
+print("Symmetric Difference:", A ^ B)
