@@ -1,2 +1,2 @@
-s = input("Enter a string: ")
-print("Palindrome" if s == s[::-1] else "Not Palindrome")
+year = int(input("Enter a year: "))
+print("Leap Year" if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) else "Not Leap Year")
