@@ -1,15 +1,10 @@
+import re
 
-"""Write a Python program to print n’th Fibonacci number using recursion."""
-def fibonacci(n):
-    if n <= 0:
-        return "Invalid input. Please enter a positive integer."
-    elif n == 1:
-        return 0
-    elif n == 2:
-        return 1
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+def is_valid_password(pwd):
+    return (len(pwd) >= 6 and 
+            any(c.islower() for c in pwd) and 
+            any(c.isupper() for c in pwd) and 
+            any(c.isdigit() for c in pwd) and 
+            any(c in "$#@" for c in pwd))
 
-# Example usage
-n = int(input("Enter the position (n) to find the Fibonacci number: "))
-print(f"The {n}th Fibonacci number is: {fibonacci(n)}")
+print(is_valid_password("Hello@1"))
