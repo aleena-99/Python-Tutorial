@@ -1,5 +1,2 @@
-
-for i in range(5, 0, -1): 
-    for j in range(i, 0, -1): 
-        print(j, end=" ")  
-    print() 
+nums = list(map(int, input("Enter numbers: ").split()))
+print(f"Sum of even numbers: {sum(n for n in nums if n % 2 == 0)}")
