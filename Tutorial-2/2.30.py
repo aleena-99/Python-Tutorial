@@ -1,14 +1,7 @@
+def find_median(numbers):
+    numbers.sort()
+    n = len(numbers)
+    mid = n // 2
+    return (numbers[mid] if n % 2 != 0 else (numbers[mid - 1] + numbers[mid]) / 2)
 
-""" Remove duplicate elements from a list."""
-
-def remove_duplicates(lst):
-    unique_list = []
-    for item in lst:
-        if item not in unique_list:
-            unique_list.append(item)
-    return unique_list
-
-n = int(input("Enter the number of elements: "))
-numbers = [int(input(f"Enter number {i+1}: ")) for i in range(n)]
-
-print(f"\nList after removing duplicates: {remove_duplicates(numbers)}")
+print(find_median([5, 3, 8, 1, 2]))
