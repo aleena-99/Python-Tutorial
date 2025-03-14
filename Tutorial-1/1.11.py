@@ -1,14 +1,9 @@
-def sum_of_even_cubes(n):
-    total = 0 
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
 
-    for i in range(2, n + 1, 2): 
-        total += i ** 3 
-
-    return total
-
-n = int(input("Enter a positive integer: "))
-
-if n <= 0:
-    print("Please enter a positive integer.")
+if a > b:
+    print(f"{a} is greater")
+elif a < b:
+    print(f"{b} is greater")
 else:
-    print(f"Sum of cubes of even numbers up to {n}: {sum_of_even_cubes(n)}")
+    print("Both numbers are equal")
