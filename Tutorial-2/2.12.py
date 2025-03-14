@@ -1,11 +1,5 @@
+def replace_spaces(s):
+    return s.replace(" ", "*") if " " in s else f"${s}$"
 
-"""Write Python script for converting Binary number into decimal number."""
-
-
-binary = input("Enter a binary number: ")
-
-
-decimal = int(binary, 2)
-
-
-print(f"Decimal representation: {decimal}")
+print(replace_spaces("Hello World"))
+print(replace_spaces("Python"))
